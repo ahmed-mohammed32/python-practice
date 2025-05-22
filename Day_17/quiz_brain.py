@@ -1,6 +1,4 @@
 # QuizBrain class
-import sys
-
 
 class QuizBrain:
     def __init__(self, q_list):
