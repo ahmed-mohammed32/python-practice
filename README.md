@@ -6,4 +6,4 @@ This repo is my daily practice from Angela Yu's "100 days of python course" on U
 
 ## Purpose
 
-Practice makes perfect & this repo holds me accountable for my growth in knowleged within my feild.
+Practice makes perfect & this repo holds me accountable for my growth in knowledge within my feild.
