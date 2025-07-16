@@ -3,10 +3,6 @@ import random
 
 timmy_the_turtle = Turtle()
 
-timmy_the_turtle.shape("turtle")
-timmy_the_turtle.color("red")
-
-
 color_names = [
     'aliceblue', 'antiquewhite', 'aqua', 'aquamarine', 'azure', 'beige', 'bisque',
     'blanchedalmond', 'blueviolet', 'brown', 'burlywood', 'cadetblue', 'chartreuse',
@@ -33,28 +29,6 @@ color_names = [
     'violet', 'wheat', 'whitesmoke', 'yellowgreen', 'white', 'black', 'red', 'green',
     'blue', 'cyan', 'yellow', 'magenta', 'grey']
 
-
-# Make a square
-# timmy_the_turtle.forward(100)
-# timmy_the_turtle.right(90)
-# timmy_the_turtle.forward(100)
-# timmy_the_turtle.right(90)
-# timmy_the_turtle.forward(100)
-# timmy_the_turtle.right(90)
-# timmy_the_turtle.forward(100)
-
-# Make a square
-# for _ in range(4):
-#     timmy_the_turtle.forward(100)
-#     timmy_the_turtle.right(90)
-
-# Dashed lines
-# for _ in range(20):
-#     timmy_the_turtle.forward(10)
-#     timmy_the_turtle.pendown()
-#     timmy_the_turtle.forward(10)
-#     timmy_the_turtle.penup()
-
 # Set the turtle object to a random color
 def random_color():
     return timmy_the_turtle.color(random.choice(color_names))
@@ -64,7 +38,7 @@ def draw_triangle(tri_sides):
     angle = 360 / tri_sides
     for _ in range(3):
         timmy_the_turtle.forward(100)
-        timmy_the_turtle.right(120)
+        timmy_the_turtle.right(angle)
 
 # Draw a square
 def draw_square(squ_sides):
