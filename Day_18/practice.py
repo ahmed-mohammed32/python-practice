@@ -116,26 +116,19 @@ def draw_decagon(dec_sides):
         timmy_the_turtle.right(angle)
 
 
-timmy_the_turtle.color(random.choice(color_names))
-draw_triangle(3)
+shapes = [
+    (draw_triangle, 3),
+    (draw_square, 4),
+    (draw_pentagon, 5),
+    (draw_hexagon, 6),
+    (draw_octagon, 8),
+    (draw_nonagon, 9),
+    (draw_decagon, 10),
+]
 
-timmy_the_turtle.color(random.choice(color_names))
-draw_square(4)
-
-timmy_the_turtle.color(random.choice(color_names))
-draw_pentagon(5)
-
-timmy_the_turtle.color(random.choice(color_names))
-draw_hexagon(6)
-
-timmy_the_turtle.color(random.choice(color_names))
-draw_octagon(8)
-
-timmy_the_turtle.color(random.choice(color_names))
-draw_nonagon(9)
-
-timmy_the_turtle.color(random.choice(color_names))
-draw_decagon(10)
+for draw_shape, sides in shapes:
+    timmy_the_turtle.color(random.choice(color_names))
+    draw_shape(sides)
 
 screen = Screen()
 screen.exitonclick()
