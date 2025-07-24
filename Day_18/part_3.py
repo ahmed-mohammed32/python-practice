@@ -42,24 +42,27 @@ def move_arrow():
     north = 90
     west = 180
     south = 270
+    directions = [0, 90, 180, 270]
     moving = True
     # Loop that keeps the arrow going forward
     while moving:
-        arrow.setheading(north)
-        arrow.pensize(random.randint(5, 7))
-        arrow.forward(random.randint(1, 50))
-        arrow.setheading(south)
-        random_color()
-        arrow.pensize(random.randint(5, 7))
-        arrow.forward(random.randint(1, 50))
-        arrow.setheading(east)
-        random_color()
-        arrow.pensize(random.randint(5, 7))
-        arrow.forward(random.randint(1, 50))
-        arrow.setheading(west)
-        random_color()
-        arrow.pensize(random.randint(5, 7))
-        arrow.forward(random.randint(1, 50))
+        for _ in directions:
+            arrow.setheading(random.choice(directions))
+            arrow.pensize(random.randint(5, 7))
+            arrow.forward(random.randint(1, 50))
+            random_color()
+            # arrow.setheading(south)
+            # random_color()
+            # arrow.pensize(random.randint(5, 7))
+            # arrow.forward(random.randint(1, 50))
+            # arrow.setheading(east)
+            # random_color()
+            # arrow.pensize(random.randint(5, 7))
+            # arrow.forward(random.randint(1, 50))
+            # arrow.setheading(west)
+            # random_color()
+            # arrow.pensize(random.randint(5, 7))
+            # arrow.forward(random.randint(1, 50))
 
 
 move_arrow()
