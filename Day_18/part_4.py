@@ -37,5 +37,6 @@ def draw_spirogrpah(radius):
 tim.speed("fastest")
 draw_spirogrpah(5)
 
+
 screen = Screen()
 screen.exitonclick()
