@@ -2,7 +2,7 @@
 from turtle import Turtle
 starting_positions = [40, 20, 0, -20, -40]
 
-class Paddle:
+class Paddle():
     def __init__(self, coordinates):
         self.all_paddles = []
         self.x_position = coordinates[0]
